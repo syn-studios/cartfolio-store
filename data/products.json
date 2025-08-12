@@ -4,7 +4,7 @@
     "name": "Premium Wireless Headphones",
     "price": 29999,
     "description": "Experience crystal-clear audio with our premium wireless headphones featuring active noise cancellation, 30-hour battery life, and premium comfort padding.",
-    "image": "assets/products/product-1.jpeg",
+    "image": "assets/products/product-1-full.jpeg",
     "category": "electronics",
     "stripe_payment_link": "YOUR_STRIPE_PAYMENT_LINK_HERE"
   },
@@ -40,7 +40,7 @@
     "name": "Portable Bluetooth Speaker",
     "price": 7999,
     "description": "Compact yet powerful Bluetooth speaker with 360-degree sound, waterproof design, and 12-hour battery life. Perfect for outdoor adventures.",
-    "image": "/assets/products/product-5.jpg",
+    "image": "/assets/products/product-5-full.jpg",
     "category": "electronics",
     "stripe_payment_link": "YOUR_STRIPE_PAYMENT_LINK_HERE"
   },
