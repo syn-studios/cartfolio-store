@@ -40,7 +40,7 @@
     "name": "Portable Bluetooth Speaker",
     "price": 7999,
     "description": "Compact yet powerful Bluetooth speaker with 360-degree sound, waterproof design, and 12-hour battery life. Perfect for outdoor adventures.",
-    "image": "/assets/products/product-5-full.jpg",
+    "image": "assets/products/product-5-full.jpg",
     "category": "electronics",
     "stripe_payment_link": "YOUR_STRIPE_PAYMENT_LINK_HERE"
   },
