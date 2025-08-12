@@ -4,7 +4,7 @@
     "name": "Premium Wireless Headphones",
     "price": 29999,
     "description": "Experience crystal-clear audio with our premium wireless headphones featuring active noise cancellation, 30-hour battery life, and premium comfort padding.",
-    "image": "assets/products/product-1.jpg",
+    "image": "assets/products/product-1.jpeg",
     "category": "electronics",
     "stripe_payment_link": "YOUR_STRIPE_PAYMENT_LINK_HERE"
   },
