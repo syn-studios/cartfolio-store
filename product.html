@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product details - Cartfolio">
+    <meta name="keywords" content="product, details, e-commerce, online shopping">
+    <title>Product Details - Cartfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#111827',
+                        accent: '#2563eb'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-gray-50 text-primary">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <img src="assets/logo.png" alt="Cartfolio Logo" class="h-8 w-8" loading="lazy">
+                        <span class="text-xl font-bold text-primary">Cartfolio</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-primary hover:text-accent transition-colors font-medium">Home</a>
+                    <a href="products.html" class="text-primary hover:text-accent transition-colors font-medium">Products</a>
+                    <a href="cart.html" class="text-primary hover:text-accent transition-colors font-medium relative">
+                        Cart
+                        <span id="cart-count" class="absolute -top-2 -right-2 bg-accent text-white text-xs rounded-full h-5 w-5 flex items-center justify-center hidden">0</span>
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-primary hover:text-accent">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-primary hover:text-accent transition-colors font-medium">Home</a>
+                <a href="products.html" class="block py-2 text-primary hover:text-accent transition-colors font-medium">Products</a>
+                <a href="cart.html" class="block py-2 text-primary hover:text-accent transition-colors font-medium">Cart</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="bg-white py-4 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center space-x-2 text-sm">
+                <a href="index.html" class="text-accent hover:text-blue-700">Home</a>
+                <span class="text-gray-500">/</span>
+                <a href="products.html" class="text-accent hover:text-blue-700">Products</a>
+                <span class="text-gray-500">/</span>
+                <span id="breadcrumb-product" class="text-gray-500">Product</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="product-details" class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Product content will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-primary mb-8">Related Products</h2>
+            <div id="related-products" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Related products will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="assets/logo.png" alt="Cartfolio Logo" class="h-8 w-8" loading="lazy">
+                        <span class="text-xl font-bold">Cartfolio</span>
+                    </div>
+                    <p class="text-gray-300">Your premium e-commerce destination for quality products.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="products.html" class="text-gray-300 hover:text-white transition-colors">Products</a></li>
+                        <li><a href="cart.html" class="text-gray-300 hover:text-white transition-colors">Cart</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Categories</h4>
+                    <ul class="space-y-2">
+                        <li><a href="products.html?category=electronics" class="text-gray-300 hover:text-white transition-colors">Electronics</a></li>
+                        <li><a href="products.html?category=clothing" class="text-gray-300 hover:text-white transition-colors">Clothing</a></li>
+                        <li><a href="products.html?category=accessories" class="text-gray-300 hover:text-white transition-colors">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-300">Email: hello@cartfolio.com</p>
+                    <p class="text-gray-300">Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 Cartfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/cart.js"></script>
+    <script>
+        let currentProduct = null;
+        let allProducts = [];
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProduct();
+            updateCartCount();
+        });
+
+        /**
+         * Load product details from URL parameter
+         */
+        async function loadProduct() {
+            try {
+                const urlParams = new URLSearchParams(window.location.search);
+                const productId = parseInt(urlParams.get('id'));
+                
+                if (!productId) {
+                    window.location.href = 'products.html';
+                    return;
+                }
+
+                const response = await fetch('data/products.json');
+                allProducts = await response.json();
+                currentProduct = allProducts.find(p => p.id === productId);
+                
+                if (!currentProduct) {
+                    window.location.href = 'products.html';
+                    return;
+                }
+
+                displayProduct();
+                loadRelatedProducts();
+                updatePageMeta();
+            } catch (error) {
+                console.error('Error loading product:', error);
+                window.location.href = 'products.html';
+            }
+        }
+
+        /**
+         * Display product details
+         */
+        function displayProduct() {
+            const container = document.getElementById('product-details');
+            
+            container.innerHTML = `
+                <!-- Product Image -->
+                <div class="space-y-4">
+                    <img src="${currentProduct.image}" alt="${currentProduct.name}" 
+                         class="w-full rounded-lg shadow-lg" loading="lazy">
+                </div>
+                
+                <!-- Product Info -->
+                <div class="space-y-6">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-bold text-primary mb-2">${currentProduct.name}</h1>
+                        <p class="text-gray-600 capitalize">${currentProduct.category}</p>
+                    </div>
+                    
+                    <div class="text-4xl font-bold text-accent">
+                        $${(currentProduct.price / 100).toFixed(2)}
+                    </div>
+                    
+                    <div class="prose max-w-none">
+                        <p class="text-gray-700 text-lg leading-relaxed">${currentProduct.description}</p>
+                    </div>
+                    
+                    <!-- Quantity and Add to Cart -->
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <label for="quantity" class="text-sm font-medium text-gray-700">Quantity:</label>
+                            <select id="quantity" class="border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-accent focus:border-transparent">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        
+                        <button onclick="addProductToCart()" 
+                                class="w-full bg-primary hover:bg-gray-800 text-white font-semibold py-4 px-8 rounded-lg transition-colors text-lg">
+                            Add to Cart
+                        </button>
+                        
+                        <button onclick="buyNow()" 
+                                class="w-full bg-accent hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors text-lg">
+                            Buy Now
+                        </button>
+                    </div>
+                    
+                    <!-- Product Features -->
+                    <div class="border-t border-gray-200 pt-6">
+                        <h3 class="text-lg font-semibold mb-4">Product Features</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Premium Quality Materials
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Fast & Free Shipping
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                30-Day Return Policy
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                24/7 Customer Support
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            `;
+        }
+
+        /**
+         * Load related products (same category, excluding current product)
+         */
+        function loadRelatedProducts() {
+            const relatedProducts = allProducts
+                .filter(p => p.category === currentProduct.category && p.id !== currentProduct.id)
+                .slice(0, 4);
+            
+            const container = document.getElementById('related-products');
+            
+            if (relatedProducts.length === 0) {
+                container.parentElement.style.display = 'none';
+                return;
+            }
+            
+            container.innerHTML = relatedProducts.map(product => `
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <a href="product.html?id=${product.id}">
+                        <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover hover:scale-105 transition-transform" loading="lazy">
+                    </a>
+                    <div class="p-4">
+                        <a href="product.html?id=${product.id}">
+                            <h3 class="text-lg font-semibold mb-2 hover:text-accent transition-colors">${product.name}</h3>
+                        </a>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-accent">$${(product.price / 100).toFixed(2)}</span>
+                            <button onclick="addToCart(${product.id})" class="bg-primary hover:bg-gray-800 text-white px-3 py-1 rounded text-sm transition-colors">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        /**
+         * Update page meta information
+         */
+        function updatePageMeta() {
+            document.title = `${currentProduct.name} - Cartfolio`;
+            document.querySelector('meta[name="description"]').content = currentProduct.description;
+            document.getElementById('breadcrumb-product').textContent = currentProduct.name;
+        }
+
+        /**
+         * Add current product to cart with selected quantity
+         */
+        function addProductToCart() {
+            const quantity = parseInt(document.getElementById('quantity').value);
+            addToCart(currentProduct.id, quantity);
+        }
+
+        /**
+         * Buy now - add to cart and redirect to cart page
+         */
+        function buyNow() {
+            const quantity = parseInt(document.getElementById('quantity').value);
+            addToCart(currentProduct.id, quantity);
+            window.location.href = 'cart.html';
+        }
+    </script>
+</body>
+</html>

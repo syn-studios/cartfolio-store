@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Premium Wireless Headphones",
+    "price": 29999,
+    "description": "Experience crystal-clear audio with our premium wireless headphones featuring active noise cancellation, 30-hour battery life, and premium comfort padding.",
+    "image": "/placeholder.svg?height=400&width=400",
+    "category": "electronics",
+    "stripe_payment_link": "YOUR_STRIPE_PAYMENT_LINK_HERE"
+  },
+  {
+    "id": 2,
+    "name": "Smart Fitness Watch",
+    "price": 19999,
+    "description": "Track your fitness goals with this advanced smartwatch featuring heart rate monitoring, GPS tracking, sleep analysis, and 7-day battery life.",
+    "image": "/placeholder.svg?height=400&width=400",
+    "category": "electronics",
+    "stripe_payment_link": "YOUR_STRIPE_PAYMENT_LINK_HERE"
+  },
+  {
+    "id": 3,
+    "name": "Organic Cotton T-Shirt",
+    "price": 3999,
+    "description": "Comfortable and sustainable organic cotton t-shirt with a modern fit. Made from 100% certified organic cotton with eco-friendly dyes.",
+    "image": "/placeholder.svg?height=400&width=400",
+    "category": "clothing",
+    "stripe_payment_link": "YOUR_STRIPE_PAYMENT_LINK_HERE"
+  },
+  {
+    "id": 4,
+    "name": "Leather Crossbody Bag",
+    "price": 12999,
+    "description": "Handcrafted genuine leather crossbody bag with multiple compartments, adjustable strap, and timeless design perfect for everyday use.",
+    "image": "/placeholder.svg?height=400&width=400",
+    "category": "accessories",
+    "stripe_payment_link": "YOUR_STRIPE_PAYMENT_LINK_HERE"
+  },
+  {
+    "id": 5,
+    "name": "Portable Bluetooth Speaker",
+    "price": 7999,
+    "description": "Compact yet powerful Bluetooth speaker with 360-degree sound, waterproof design, and 12-hour battery life. Perfect for outdoor adventures.",
+    "image": "/placeholder.svg?height=400&width=400",
+    "category": "electronics",
+    "stripe_payment_link": "YOUR_STRIPE_PAYMENT_LINK_HERE"
+  },
+  {
+    "id": 6,
+    "name": "Minimalist Wallet",
+    "price": 4999,
+    "description": "Sleek minimalist wallet crafted from premium leather with RFID blocking technology. Holds up to 8 cards and cash in a slim profile.",
+    "image": "/placeholder.svg?height=400&width=400",
+    "category": "accessories",
+    "stripe_payment_link": "YOUR_STRIPE_PAYMENT_LINK_HERE"
+  }
+]
